@@ -66,4 +66,11 @@ header a {
 header a:hover {
    background-color: #ff4c4c;
 }
+/* MAIN LAYOUT */
+main {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   padding: 40px;
+}
 
