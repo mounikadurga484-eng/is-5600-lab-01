@@ -73,4 +73,68 @@ main {
    gap: 25px;
    padding: 40px;
 }
+/* CARD STYLING */
+.card {
+   background-color: white;
+   width: 300px;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
+.card img {
+   width: 100%;
+   display: block;
+}
+
+.card div {
+   padding: 15px;
+}
+
+.card h3 {
+   margin-bottom: 10px;
+}
+
+.description {
+   font-size: 0.9rem;
+   color: #666;
+   margin-bottom: 15px;
+}
+
+/* SOCIAL ICONS */
+.social {
+   display: flex;
+   gap: 15px;
+   font-size: 0.9rem;
+   color: #555;
+}
+
+.heart::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-image: url("images/heart.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin-right: 5px;
+}
+
+.comment::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-image: url("images/comment.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin-right: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+   main {
+      flex-direction: column;
+      align-items: center;
+   }
+}
